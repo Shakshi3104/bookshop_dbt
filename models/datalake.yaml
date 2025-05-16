@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: bronze
+    schema: Tableau_Bookshop
+    tables:
+      - name: Author
+      - name: Award
+      - name: Book
+      - name: Checkouts
+      - name: Edition
+      - name: Info
+      - name: Publisher
+      - name: Ratings
+      - name: Sales
+      - name: Series
