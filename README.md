@@ -5,6 +5,11 @@ This is the dbt sample project using [Bookshop dataset provided by Tableau](http
 ## Architecture
 ![](./materials/architecture.png)
 
+## Transformation
+### monthly_popular_books
+Transformation and star scheme to analyze popular books by month. 
+![](./materials/trasform_star-scheme.png)
+
 ## Requirements
 - Python 3.10
 - dbt-core
