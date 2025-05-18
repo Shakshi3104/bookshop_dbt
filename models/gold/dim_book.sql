@@ -1,6 +1,7 @@
 with average_ratings as (
     select
         book_id,
+        -- 全期間でレビュー点数を平均
         avg(rating) as average_rating
 
     from {{ source('bronze', 'Ratings') }}
