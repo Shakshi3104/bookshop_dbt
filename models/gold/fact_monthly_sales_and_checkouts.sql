@@ -5,6 +5,7 @@ with monthly_sales as (
         count(book_id) as amount
 
     from {{ ref('silver_sales') }}
+    -- 月別で集計する
     group by book_id, date_trunc(sales_date, month)
 ),
 final as (
