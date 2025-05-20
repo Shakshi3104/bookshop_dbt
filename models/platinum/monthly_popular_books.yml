@@ -9,8 +9,16 @@ models:
         description: "年月"
       - name: amount
         description: "その月の売上数"
+        meta:
+          metrics:
+            total_sales:
+              type: sum
       - name: checkouts
         description: "その月の貸出数"
+        meta:
+          metrics:
+            total_sales:
+              type: sum
       - name: title
         description: "本のタイトル"
       - name: genre
