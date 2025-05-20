@@ -11,13 +11,13 @@ models:
         description: "その月の売上数"
         meta:
           metrics:
-            total_sales:
+            total_amount:
               type: sum
       - name: checkouts
         description: "その月の貸出数"
         meta:
           metrics:
-            total_sales:
+            total_checkouts:
               type: sum
       - name: title
         description: "本のタイトル"
