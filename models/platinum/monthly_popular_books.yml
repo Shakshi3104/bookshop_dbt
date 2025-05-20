@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: monthly_popular_books
+    columns:
+      - name: book_id
+        description: "本のユニークなID"
+      - name: year_month
+        description: "年月"
+      - name: amount
+        description: "その月の売上数"
+      - name: checkouts
+        description: "その月の貸出数"
+      - name: title
+        description: "本のタイトル"
+      - name: genre
+        description: "本のジャンル"
+      - name: author_name
+        description: "著者名"
+      - name: average_rating
+        description: "平均のレビュー点数"
