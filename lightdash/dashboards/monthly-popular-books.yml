@@ -1,0 +1,51 @@
+name: Monthly popular books
+description: ""
+updatedAt: "2025-05-22T12:41:38.955Z"
+tiles:
+  - x: 18
+    "y": 0
+    h: 9
+    w: 18
+    tabUuid: null
+    type: saved_chart
+    properties:
+      title: ""
+      hideTitle: false
+      chartSlug: top-10-checkouts-1747740412006
+    tileSlug: top-10-checkouts-1747740412006
+  - x: 0
+    "y": 0
+    h: 9
+    w: 18
+    tabUuid: null
+    type: saved_chart
+    properties:
+      title: ""
+      hideTitle: false
+      chartSlug: top-10-amount
+    tileSlug: top-10-amount
+filters:
+  metrics: []
+  dimensions:
+    - target:
+        fieldId: monthly_popular_books_year_month_month
+        fieldName: year_month_month
+        tableName: monthly_popular_books
+      values:
+        - 2193-05
+      disabled: false
+      operator: equals
+      required: false
+      tileTargets:
+        top-10-checkouts-1747740412006:
+          fieldId: monthly_popular_books_year_month_month
+          tableName: monthly_popular_books
+        top-10-amount:
+          fieldId: monthly_popular_books_year_month_month
+          tableName: monthly_popular_books
+  tableCalculations: []
+tabs: []
+slug: monthly-popular-books
+spaceSlug: shared
+version: 1
+downloadedAt: "2025-05-22T12:50:34.304Z"

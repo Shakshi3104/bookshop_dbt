@@ -1,0 +1,60 @@
+name: Top 10 amount
+description: null
+tableName: monthly_popular_books
+updatedAt: "2025-05-20T11:23:41.531Z"
+metricQuery:
+  exploreName: monthly_popular_books
+  dimensions:
+    - monthly_popular_books_title
+    - monthly_popular_books_author_name
+    - monthly_popular_books_amount
+  metrics: []
+  filters:
+    dimensions:
+      id: 55419d77-894c-443a-99a8-acac35bf6cf0
+      and:
+        - id: 4fffed74-7ac0-4797-862e-7f5b7c81591b
+          target:
+            fieldId: monthly_popular_books_year_month_month
+          values:
+            - 2193-05
+          operator: equals
+          required: false
+  sorts:
+    - fieldId: monthly_popular_books_amount
+      descending: true
+  limit: 10
+  metricOverrides: {}
+  tableCalculations: []
+  additionalMetrics: []
+  customDimensions: []
+chartConfig:
+  type: cartesian
+  config:
+    layout:
+      xField: monthly_popular_books_title
+      yField:
+        - monthly_popular_books_amount
+      flipAxes: true
+    eChartsConfig:
+      xAxis:
+        - inverse: true
+          sortType: default
+      series:
+        - type: bar
+          encode:
+            xRef:
+              field: monthly_popular_books_title
+            yRef:
+              field: monthly_popular_books_amount
+          yAxisIndex: 0
+          isFilteredOut: false
+slug: top-10-amount
+tableConfig:
+  columnOrder:
+    - monthly_popular_books_title
+    - monthly_popular_books_author_name
+    - monthly_popular_books_amount
+spaceSlug: shared
+version: 1
+downloadedAt: "2025-05-22T12:50:33.683Z"
